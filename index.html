@@ -1,0 +1,160 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bierhaus Henseler</title>
+    <link rel="icon" type="image/jpeg" href="imagenes/logo.png">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/Productos.css">
+    <link rel="stylesheet" href="styles/carrito.css">
+    <script src="scripts/carrito.js"></script>
+    <script src="scripts/buscador.js"></script>
+    <link rel="stylesheet" href="styles/responsive.css">
+    <meta name="description" content="Somos una empresa de comercio de cerveza">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+</head>
+<body>
+    <div id="mensajeAddCarrito">
+        <p>PRODUCTO AÑADIDO AL CARRITO CON ÉXITO</p>
+    </div>
+    <div id="mensajeError">
+        <p>POR FAVOR COMPLETE TODOS LOS CAMPOS</p>
+    </div>
+    <div id="pre-carrito">
+        <div id="info-pre-carrito">
+            <div id="pre-carrito-picture"><button id="volver" onclick="cerrarProducto()"></button></div>
+            <h1 id="pre-carrito-nombre"></h1>
+            <p id="pre-carrito-description"></p>
+            <div>
+                <p id="cantidad-titulo">Cantidad:</p>
+                <div id="cantidad-btn-menos"><input id="btnSumarORestar" type="button" value="-" onclick="addMenosOMas(this.value)" /></div>
+                <p id="cantidad-numeros">1</p>
+                <div id="cantidad-btn-mas"><input id="btnSumarORestar" type="button" value="+" onclick="addMenosOMas(this.value)" /></div>
+            </div>
+            <p id="pre-carrito-valor"></p>
+            <button id="agregarCarrito" onclick="agregarCarrito()">Agregar al carrito</button>
+        </div>
+        <div id="fondo-pre-carrito" onclick="cerrarProducto()"></div>
+    </div>
+    <div id="carrito-btn" onclick="abrirCarrito()"><div id="carrito-btn-valor"></div></div>
+    <div id="carrito">
+        <div id="info-carrito">
+            <button id="volver" onclick="cerrarCarrito()"></button>
+            <div id="headerCarrito"></div>
+            <div id="productos-en-carrito">
+                <p>Tu pedido</p>
+                <table id="titulosTabla">
+                    <tr>
+                        <td>Producto:</td>
+                        <td>Valor:</td>
+                        <td>Cantidad:</td>
+                    </tr>
+                </table>
+                <table id="productoFinal">
+                </table>
+                <div id="lineaFacha"></div>
+                <div id="precioFinal"></div>
+                <button id="agregarCarrito" onclick="preFinalizarCompra()">Siguiente</button>
+            </div>
+            <div id="info-pre-warap">
+                <p>Información</p>
+                <label>Nombre:</label> <input id="nombreCliente" type="text" placeholder="Nombre" />
+                <br />
+                <br />
+                <label>Telefono:</label> <input id="telefonoCliente" type="tel" placeholder="Telefono" />
+                <div id="lineaFacha"></div>
+                <button id="agregarCarrito" onclick="finalizarCompra()">Finalizar Compra</button>
+            </div>
+        </div>
+        <div id="fondo-carrito" onclick="cerrarCarrito()"></div>
+    </div>
+    <header id="header">
+        <div class="imgFondoCabecera"></div>
+        <div class="imgLogoCabecera"></div>
+        <div class="infoCabecera">
+            <h1>Bierhaus Henseler</h1>
+            <p>Pasión por la cerveza. Cerveza artesanal premium.</p>
+            <div class="ubicacionEmpresa">
+                <div class="logoUbicacion"></div>
+                <a href="https://www.google.com/maps/place/San+Carlos+de+Bariloche,+R%C3%ADo+Negro/@-41.128268,-71.4799984,11z/data=!3m1!4b1!4m5!3m4!1s0x961a7b1520c860e5:0x8210ae97cb7b9a65!8m2!3d-41.1334722!4d-71.3102778" target="_blank">San Carlos de Bariloche, Río Negro</a>
+            </div>
+            <div class="redSocial">
+                <a class="redSocialWarapp" href="https://wa.me/5492944506988" target="_blank"></a>
+                <a class="redSocialInstagram" href="https://instagram.com/bierhaus_henseler" target="_blank"></a>
+            </div>
+        </div>
+        <div class="cabeceraFooter">
+            <p>Pedidos vía whatsapp</p>
+        </div>
+        <div class="cabeceraFooterBuscador">
+            <select onchange="moverseA(this.value)">
+                <option value="header">Categorias</option>
+                <option value="Destacados">Destacados</option>
+                <option value="cervezasArtesanalesPremium">Cervezas Artesanales Premium</option>
+            </select>
+            <div class="lupa"></div>
+            <input id="buscador" class="buscador" onkeyup="busqueda()" placeholder="Buscar.." />
+        </div>
+    </header>
+    <article>
+        <section class="Destacados" id="Destacados">
+            <h3>Destacados</h3>
+            <div class="parent">
+                <div class="div1">
+                    <div class="foto"></div>
+                    <h5>Cerveza India Pale Ale</h5>
+                    <p>$850.00</p>
+                    <input type="button" value="Ver más" name="India Pale Ale" onclick="traerVariables(this.name, 850.00)" />
+                </div>
+                <div class="div2">
+                    <div class="foto"></div>
+                    <h5>Cerveza Cream Stout</h5>
+                    <p>$850.00</p>
+                    <input type="button" value="Ver más" name="Cream Stout" onclick="traerVariables(this.name, 850.00)" />
+                </div>
+            </div>
+        </section>
+        <section class="cervezasArtesanalesPremium" id="cervezasArtesanalesPremium">
+            <h3>Cervezas Artesanales Premium</h3>
+            <div class="parent">
+                <div class="div1">
+                    <div class="foto"></div>
+                    <h5>Cerveza Bufalo</h5>
+                    <p>$850.00</p>
+                    <input type="button" value="Ver más" name="Bufalo" onclick="traerVariables(this.name, 850.00)" />
+                </div>
+                <div class="div2">
+                    <div class="foto"></div>
+                    <h5>Cerveza Golden Ale</h5>
+                    <p>$850.00</p>
+                    <input type="button" value="Ver más" name="Golden Ale" onclick="traerVariables(this.name, 850.00)" />
+                </div>
+                <div class="div3">
+                    <div class="foto"></div>
+                    <h5>Cerveza India Pale Ale</h5>
+                    <p>$850.00</p>
+                    <input type="button" value="Ver más" name="India Pale Ale" onclick="traerVariables(this.name, 850.00)" />
+                </div>
+                <div class="div4">
+                    <div class="foto"></div>
+                    <h5>Cream Stout</h5>
+                    <p>$850.00</p>
+                    <input type="button" value="Ver más" name="Cream Stout" onclick="traerVariables(this.name, 850.00)" />
+                </div>
+                <div class="div5">
+                    <div class="foto"></div>
+                    <h5>Cerveza Porter</h5>
+                    <p>$850.00</p>
+                    <input type="button" value="Ver más" name="Porter" onclick="traerVariables(this.name, 850.00)" />
+                </div>
+                <div class="div6">
+                    <div class="foto"></div>
+                    <h5>Cerveza Scotch Ale</h5>
+                    <p>$850.00</p>
+                    <input type="button" value="Ver más" name="Scottish Ale" onclick="traerVariables(this.name, 850.00)" />
+                </div>
+            </div>
+        </section>
+    </article>
+</body>
+</html>
