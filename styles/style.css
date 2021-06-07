@@ -1,0 +1,144 @@
+html {
+    scroll-behavior: smooth;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    overflow-x: hidden;
+}
+body {
+    flex-wrap: wrap;
+}
+/*cabezera*/
+header .imgFondoCabecera {
+    margin-top: -0.6%;
+    margin-left: 7%;
+    margin-right: 5%;
+    width: 85%;
+    height: 230px;
+    border-radius: 0px 0px 10px 10px;
+    background: no-repeat center/105% url(../imagenes/banner.jpg);
+}
+header .imgLogoCabecera {
+    margin-top: -3%;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-bottom: auto;
+    width: 130px;
+    height: 130px;
+    border: 2px solid #FFFFFF;
+    border-radius: 50%;
+    background: repeat center/105% url(../imagenes/logo.png);
+}
+header .infoCabecera {
+    display: flex;
+    flex-direction: column;
+    grid-area: information / information / information / information;
+    font-family: system-ui;
+    margin-top: -8%;
+    margin-left: 21%;
+} 
+header .infoCabecera h1 {
+    font-size: 200%;
+    font-weight: bolder;
+    color: black;
+    margin-left:-0.1%;
+}
+header .infoCabecera p {
+    font-size: 100%;
+    font-weight: 500;
+    margin-top: -1.5%;
+    color: rgb(113, 128, 150);
+}
+header .infoCabecera .ubicacionEmpresa{
+    display: flex;
+    flex-direction: row;
+}
+header .infoCabecera .ubicacionEmpresa .logoUbicacion {
+    background:no-repeat center/20% url(../imagenes/logoUbicacion.png);
+    height: 35px;
+    width: 10%;
+    margin-left:-4.3%;
+    margin-top:-0.8%;
+}
+header .infoCabecera .ubicacionEmpresa a {   
+   margin-top:0%;
+   margin-left:-3.6%;
+   color: rgb(214, 158, 46);
+   font-weight: 500;
+   text-decoration: none;
+}
+header .redSocial {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    margin-top:-9%;
+    margin-left: 65%;
+    justify-content: center;
+    height:10px;
+}
+header .redSocial .redSocialWarapp {
+    background: no-repeat center/100% url(../imagenes/logoWarap.png);
+    height: 100px;
+    width: 10%;
+    margin-right:5%;
+}
+header .redSocial .redSocialInstagram{
+     background: no-repeat center/100% url(../imagenes/logoinsta.png);
+     height: 100px;
+     width: 10%;
+}
+header .cabeceraFooter {
+    margin-top: 8%;
+    margin-left: 7%;
+    margin-right: 5%;
+    height: 50px;
+    width: 84%;
+    background-color: rgb(255, 255, 240);
+    padding:0.5%;
+}
+header .cabeceraFooter p{
+    color: rgb(214, 158, 46);
+    font-family: system-ui;
+    text-align:center;
+    font-weight: 500;
+}
+header .cabeceraFooterBuscador {
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    margin-left: 7%;
+    margin-right: 5%;
+    height: 50px;
+    width: 85%;
+    background-color: rgb(226, 232, 240);
+    border-radius: 0px 0px 10px 10px;
+}
+header .cabeceraFooterBuscador select{
+    height:100%;
+    width:10%;
+    font-family: system-ui;
+    font-size:110%;
+    background-color: rgb(226, 232, 240);
+    border: 1px solid #E5E7E9;
+    border-right: 1px solid #B3BECC;
+    border-radius: 0px 0px 0px 10px;
+}
+header .cabeceraFooterBuscador .lupa{
+    background: no-repeat center/40%url(../imagenes/lupa.png);
+    height: 35px;
+    width: 5%;
+    filter: opacity(.5);
+}
+header .cabeceraFooterBuscador .buscador{
+    background-color: rgb(226, 232, 240);
+    border: 1px solid #E5E7E9;
+    height:85%;
+    width:50%;
+    font-family: system-ui;
+    font-size:110%;
+    filter: opacity(.5);
+    outline: none;
+}
+

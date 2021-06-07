@@ -1,0 +1,149 @@
+article input {
+    outline: none;
+    cursor: pointer;
+    border: 1px solid transparent;
+    border-radius: 5%;
+    padding: 2%;
+    background-color: #28B463;
+    color: #fff;
+    margin-left: 35%;
+    margin-bottom: 5%;
+}
+article input:hover{
+    background-color:#7DCEA0;
+}
+/*destacados*/
+article .Destacados {
+    margin-left: 7%;
+    margin-top: 5%;
+    font-family: system-ui;
+    font-size: 130%;
+}
+article .Destacados .parent {
+    display: grid;
+    grid-template-columns: repeat(2, 25%);
+    grid-template-rows: 100%;
+    grid-column-gap: 40px;
+    font-weight: 400;
+    margin-left: 5%;
+}
+article .Destacados .parent .div1 {
+    grid-area: 1 / 1 / 2 / 2;
+    box-shadow: 5px 9px 15px 5px rgba(0,0,0,0.17);
+}
+article .Destacados .parent .div1 .foto{
+   background:no-repeat center/85% url(../imagenes/indiaPale.jpg);
+   height: 338px;
+   width: 100%;
+   margin-top: -10%;
+   
+}
+article .Destacados .parent .div2 {
+    grid-area: 1 / 2 / 2 / 3;
+    box-shadow: 5px 9px 15px 5px rgba(0,0,0,0.17);
+}
+article .Destacados .parent .div2 .foto{
+   background:no-repeat center/85% url(../imagenes/creamstout.jpg);
+   margin-top: -10%;
+   height: 338px;
+   width: 100%;
+}
+article .Destacados .parent  h5{
+    margin-top: -10%;
+    margin-left: 8%;
+}
+article .Destacados .parent  p{
+    margin-top: -8%;
+    margin-left: 8%;
+    font-size: 80%;
+    color:#2ECC71;
+    font-weight: 400;
+}
+/*segunda seccion*/
+    article .cervezasArtesanalesPremium {
+    margin-left: 7%;
+    margin-top: 5%;
+    font-family: system-ui;
+    font-size: 130%;
+}
+article .cervezasArtesanalesPremium .parent {
+    display: grid;
+    grid-template-columns: repeat(3, 25%);
+    grid-template-rows: repeat(2, 47.5%);
+    grid-column-gap: 40px;
+    grid-row-gap: 40px;
+    margin-left: 5%;
+    margin-bottom:10%;
+}
+
+article .cervezasArtesanalesPremium .parent .div1 {
+    grid-area: 1 / 1 / 2 / 2;
+    box-shadow: 5px 9px 15px 5px rgba(0,0,0,0.17);
+}
+article .cervezasArtesanalesPremium .parent .div1 .foto{
+   background:no-repeat center/85% url(../imagenes/bufalo.jpg);
+   margin-top: -10%;
+   height: 338px;
+   width: 100%;
+}
+article .cervezasArtesanalesPremium .parent .div2 {
+    grid-area: 1 / 2 / 2 / 3;
+    box-shadow: 5px 9px 15px 5px rgba(0,0,0,0.17);
+}
+article .cervezasArtesanalesPremium .parent .div2 .foto{
+   background:no-repeat center/85% url(../imagenes/goldenAle.jpg);
+   margin-top: -10%;
+   height: 338px;
+   width: 100%;
+}
+article .cervezasArtesanalesPremium .parent .div3 {
+    grid-area: 1 / 3 / 2 / 4; 
+    box-shadow: 5px 9px 15px 5px rgba(0,0,0,0.17);
+}
+article .cervezasArtesanalesPremium .parent .div3 .foto{
+   background:no-repeat center/85% url(../imagenes/indiaPale.jpg);
+   margin-top: -10%;
+   height: 338px;
+   width: 100%;
+}
+article .cervezasArtesanalesPremium .parent .div4 {
+    grid-area: 2 / 1 / 3 / 2;
+    box-shadow: 5px 9px 15px 5px rgba(0,0,0,0.17);
+}
+article .cervezasArtesanalesPremium .parent .div4 .foto{
+   background:no-repeat center/85% url(../imagenes/creamstout.jpg);
+   margin-top: -10%;
+   height: 338px;
+   width: 100%;
+}
+article .cervezasArtesanalesPremium .parent .div5 {
+    grid-area: 2 / 2 / 3 / 3;
+    box-shadow: 5px 9px 15px 5px rgba(0,0,0,0.17);
+}
+article .cervezasArtesanalesPremium .parent .div5 .foto{
+   background:no-repeat center/85% url(../imagenes/porter.jpg);
+   margin-top: -10%;
+   height: 338px;
+   width: 100%;
+}
+article .cervezasArtesanalesPremium .parent .div6 {
+    grid-area: 2 / 3 / 3 / 4; 
+    box-shadow: 5px 9px 15px 5px rgba(0,0,0,0.17);
+}
+article .cervezasArtesanalesPremium .parent .div6 .foto{
+   background:no-repeat center/85% url(../imagenes/scochAle.jpg);
+   margin-top: -10%;
+   height: 338px;
+   width: 100%;
+}
+article .cervezasArtesanalesPremium .parent h5 {
+    margin-top: -10%;
+    margin-left: 8%;
+}
+article .cervezasArtesanalesPremium .parent p {
+    margin-top: -8%;
+    margin-left: 8%;
+    font-size: 80%;
+    color: #2ECC71;
+}
+

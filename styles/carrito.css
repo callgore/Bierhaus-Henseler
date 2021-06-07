@@ -1,0 +1,324 @@
+/*pre carrito*/
+#pre-carrito{
+    display:none;
+}
+#fondo-pre-carrito {
+    margin-left: -1%;
+    height: 900px;
+    width: 100%;
+    filter: opacity(.7);
+    position: fixed;
+    z-index: 1;
+    background-color: #D5D8DC;
+}
+#info-pre-carrito {
+    margin-left: 65%;
+    position: fixed;
+    height: 900px;
+    width: 40%;
+    background-color: #FDFEFE;
+    z-index: 2;
+    animation: abrir-pre-carrito 5s;
+}
+#pre-carrito-picture {
+    margin-top: 1%;
+    margin-left: -5%;
+    background: no-repeat center/60% url(../imagenes/goldenAle.jpg);
+    height: 350px;
+    width: 100%;
+}
+#info-pre-carrito #volver {
+    margin-left: 5%;
+    background: no-repeat center/85% url(../imagenes/flecha.png);
+    background-color: #F0F3F4;
+    height: 50px;
+    width: 10%;
+    border: 1px solid #E5E8E8;
+    border-left: 1px solid transparent;
+    border-radius: 0px 20px 20px 0px;
+    cursor: pointer;
+}
+#info-pre-carrito #volver:hover {
+    background-color: #CCD1D1;
+}
+#pre-carrito-nombre {
+    margin-top: -1%;
+    font-family: system-ui;
+    font-size: 130%;
+    margin-left: 10%;
+}
+#pre-carrito-description {
+    margin-top: -1%;
+    font-family: system-ui;
+    margin-left: 10%;
+    margin-right: 20%;
+    color: rgb(113, 128, 150);
+    font-weight: 500;
+}
+#cantidad-titulo {
+    margin-top: 1%;
+    font-family: system-ui;
+    margin-left: 10%;
+    margin-right: 20%;
+    color: rgb(113, 128, 150);
+    font-weight: 400;
+}
+#btnSumarORestar {
+    outline: none;
+    cursor: pointer;
+    border: 1px solid transparent;
+    background-color: #28B463;
+    color: #fff;
+}
+ #cantidad-btn-menos {
+    margin-top: -6.5%;
+    margin-left: 35%;
+    outline: none;
+    cursor: pointer;
+    border: 1px solid transparent;
+    border-radius: 10%;
+    width: 5%;
+    background-color: #28B463;
+    color: #fff;
+    text-align: center;
+}
+ #cantidad-btn-mas {
+    margin-top: -7%;
+    margin-left: 51%;
+    outline: none;
+    cursor: pointer;
+    border: 1px solid transparent;
+    border-radius: 10%;
+    width: 5%;
+    background-color: #28B463;
+    color: #fff;
+    text-align: center;
+}
+#cantidad-numeros {
+    margin-top: -3.5%;
+    margin-left: 45%;
+}
+#pre-carrito-valor {
+    margin-top: 10%;
+    margin-left: 10%;
+    font-size: 120%;
+    color: #2ECC71;
+    font-family: system-ui;
+    font-weight: 400;
+}
+#agregarCarrito {
+    outline: none;
+    cursor: pointer;
+    border: 1px solid transparent;
+    border-radius: 5%;
+    padding: 2%;
+    background-color: #28B463;
+    color: #fff;
+    margin-left: 35%;
+    margin-top: 5%;
+}
+#agregarCarrito:hover {
+    background-color: #7DCEA0;
+}
+@keyframes abrir-pre-carrito{
+    0% {
+        transform: translate(1000px, 0px);
+    }
+    10%{
+        transform: translate(0px);
+    }
+}
+#carrito-btn {
+    display: none;
+    margin-top: 47.7%;
+    margin-left: 40%;
+    position: fixed;
+    z-index: 1;
+    outline: none;
+    cursor: pointer;
+    border: 1.5px solid azure;
+    border-radius: 30px 30px 0px 0px;
+    width: 20%;
+    height: 50px;
+    background-color: #fff;
+    box-shadow: -1px -4px 22px 5px rgba(0,0,0,0.40);
+    animation: abrir-btn-carrito 5s;
+}
+#carrito-btn-valor {
+    color: #2ECC71;
+    text-align: center;
+    font-size: 150%;
+    margin-top: 3%;
+    font-family: system-ui;
+    font-weight: 400;
+}
+@keyframes abrir-btn-carrito {
+    0%{
+        transform: translate(0px, 100px);
+    }
+    10%{
+        transform: translate(0px);
+    }
+}
+/*carrito*/
+#carrito {
+    display: none;
+}
+#headerCarrito {
+    margin-top: -12%;
+    z-index: -1;
+    height: 120px;
+    width: 100%;
+    background-color: #28B463;
+}
+#fondo-carrito {
+    margin-left: -1%;
+    margin-top: -5%;
+    height: 900px;
+    width: 110%;
+    filter: opacity(.7);
+    position: fixed;
+    z-index: 1;
+    background-color: #D5D8DC;
+}
+#info-carrito {
+    margin-left: 65%;
+    position: fixed;
+    height: 900px;
+    width: 40%;
+    background-color: #FDFEFE;
+    z-index: 20;
+    animation: abrir-pre-carrito 5s;
+}
+#info-carrito #volver {
+    margin-top: 1%;
+    background: no-repeat center/85% url(../imagenes/flecha.png);
+    background-color: #F0F3F4;
+    height: 50px;
+    width: 10%;
+    border: 1px solid #E5E8E8;
+    border-left: 1px solid transparent;
+    border-radius: 0px 20px 20px 0px;
+    cursor: pointer;
+}
+#info-carrito #volver:hover {
+    background-color: #CCD1D1;
+}
+#info-carrito p{
+    font-weight: 600;
+    font-family: system-ui;
+    font-size: 200%;
+    margin-left: 15%;
+}
+#info-carrito #titulosTabla{
+    font-weight: 500;
+    margin-top: -3%;
+    margin-left: 12%;
+    border-collapse: separate;
+    border-spacing: 30px 10px;
+    font-family: system-ui;
+    font-size: 100%;
+}
+#info-carrito #productoFinal{
+    font-weight: 500;
+    margin-top: -3%;
+    margin-left: 12%;
+    border-collapse: separate;
+    border-spacing: 14px 10px;
+    font-weight: 400;
+    font-family: system-ui;
+    font-size: 100%;
+}
+#lineaFacha {
+    margin-left: 3%;
+    z-index: -1;
+    width: 80%;
+    height: 3px;
+    background-color: #28B463;
+    margin-top: 5%;
+}
+#info-carrito #precioFinal {
+    font-weight: 400;
+    font-family: system-ui;
+    margin-top: 1%;
+    margin-left: 12%;
+    color: #2ECC71;
+    font-size: 120%;
+}
+#info-carrito #agregarCarrito {
+    outline: none;
+    cursor: pointer;
+    border: 1px solid transparent;
+    border-radius: 5%;
+    padding: 2%;
+    background-color: #28B463;
+    color: #fff;
+    top:-5%
+}
+#info-carrito #agregarCarrito:hover {
+    background-color: #7DCEA0;
+}
+#info-pre-warap {
+    display: none;
+}
+#info-pre-warap p {
+    font-weight: 600;
+    font-family: system-ui;
+    font-size: 200%;
+    margin-left: 15%;
+}
+#info-pre-warap label {
+    font-family: system-ui;
+    color: rgb(113, 128, 150);
+    margin-left: 15%;
+}
+#info-pre-warap input {
+    outline: none;
+    border: 1px solid transparent;
+    border-bottom: 1px solid #28B463;
+}
+#nombreCliente::placeholder, #telefonoCliente::placeholder {
+    color: #CCD1D1;
+}
+/*mensajeAddCarrito*/
+#mensajeAddCarrito {
+    display: none;
+    background-color: #61F14A;
+    position: fixed;
+    margin-top: 1%;
+    margin-left: 3%;
+    height: 50px;
+    width: 50%;
+    border: 1px solid transparent;
+    border-radius: 1%;
+    filter: opacity(.8);
+    text-align: center;
+    font-family: system-ui;
+    font-size: 100%;
+    color: #F8F9F9;
+    z-index: 10000;
+    animation: mensajeAddCarrito 1.5s ease 0s normal none;
+}
+#mensajeError {
+    display: none;
+    background-color: #EC7063;
+    position: fixed;
+    margin-top: 1%;
+    margin-left: 3%;
+    height: 50px;
+    width: 50%;
+    border: 1px solid transparent;
+    border-radius: 1%;
+    filter: opacity(.8);
+    text-align: center;
+    font-family: system-ui;
+    font-size: 100%;
+    color: #F8F9F9;
+    z-index: 10000;
+    animation: mensajeAddCarrito 1.5s ease 0s normal none;
+}
+@keyframes mensajeAddCarrito {
+    0.0% {
+        transform: translate(0px, -550px);
+    }
+}
